@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+    <title>WISH</title>
+
+    <style>
+        .card-group {
+            background-color: black;
+            width: 1000px;
+            height: auto;
+            margin: 30px auto 0px auto;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card {
+            /*사이사이 간격을 좀 띄우고싶은데.. 부트스트랩에서 붙어있는걸 가져와서 만져보는데 시간이 좀 걸릴 것 같습니다*/
+            /*이게 왜 사이트 줄였다 늘였다 하면 반사이즈에서부터 줄어들까요... 수정하겠습니다 ^^...*/
+            width: 600px;
+            height: auto;
+        }
+        .card-img-top {
+            /*크기 잘 모르겠습니다.. 이미지 넣어볼 시간이 없어서.. 컬러는 크기 가늠하느라 넣어봤습니다*/
+            background-color: antiquewhite;
+        }
+        .card-heater {
+            flex: 1;
+            /*..... ^^... 제 맘대로 정렬이 안되네요... footer처럼 수정하겠습니다*/
+            /*footer처럼 dorder-bottom으로 라인 넣을랬는데 안들어가져서.. 수정하겠습닌드ㅏ...*/
+            border-bottom: 1px grey;
+        }
+        .text-title {
+            color: black;
+            /*date랑 간격 좀 붙이고싶어서.. 수정하겠습니다*/
+        }
+        .text-date {
+            color: gray;
+        }
+
+
+    </style>
+</head>
+
+<body>
+<div class="card-group">
+    <div class="card">
+        <div class="card-heater">
+            <h3 class="text-title">Card title</h3>
+            <small class="text-date">Date: @@@@</small>
+        </div>
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">여기엔 코멘트 내용이 들어갑니다~ 길이가 멋대로 늘어납니다~ This is a wider card with supporting text below as a natural lead-in to additional
+                content.</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">#태그 #이게 #맞냐 #ㅠㅠ</small>
+        </div>
+    </div>
+    <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+    </div>
+    <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+    </div>
+    <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+    </div>
+
+
+</div>
+</body>
+
+</html>

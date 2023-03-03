@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cs_css.css">
+    <style>
+        
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        const es_container = document.querySelector('.es_main');
+        let es_isMoving = false;
+        let scrollX = 0;
+        let mouseX = 0;
+        const sensitivity = 0.1;
+
+        es_container.addEventListener('mouseenter', (event) => {
+            isMoving = true;
+            mouseX = event.clientX;
+            scrollX = container.scrollLeft;
+        });
+
+        es_container.addEventListener('mousemove', (event) => {
+            if (!isMoving) {
+                return;
+            }
+
+            const deltaX = event.clientX - mouseX;
+            es_container.scrollLeft = scrollX - deltaX * sensitivity;
+        });
+
+        es_container.addEventListener('mouseleave', () => {
+            isMoving = false;
+        });
+    </script>
+</head>
+
+<body>
+    <div class="es_main_category">
+        <div class="es_scroll_left">
+            <p>스크롤 입니다.</p>
+        </div>
+        <div class="es_todo1">
+            <h1 class="es_text_catagorytitle" id="es_category_click">To-D0 list</h1>
+            <div class="es_smalltitle">
+                <p>title</p>
+                <p>by name</p>
+            </div>
+        </div>
+        <div class="es_todo2">
+            <h1 class="es_text_catagorytitle">To-D0 list</h1>
+            <div class="es_smalltitle">
+            </div>
+        </div>
+        <div class="es_todo2">
+            <h1 class="es_text_catagorytitle">To-D0 list</h1>
+            <div class="es_smalltitle">
+            </div>
+        </div>
+        <div class="es_todo2">
+            <h1 class="es_text_catagorytitle">To-D0 list</h1>
+            <div class="es_smalltitle">
+            </div>
+        </div>
+        <div class="es_todo3">
+            <h1 class="es_text_catagorytitle">To-D0 list</h1>
+            <div class="es_smalltitle">
+            </div>
+        </div>
+        <div class="es_scroll_right">
+            <p>스크롤 입니다.</p>
+        </div>
+    </div>
+</body>
+
+</html>
